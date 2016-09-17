@@ -36,6 +36,7 @@ class App extends Component {
       this.boundsChangedCallback = this.boundsChangedCallback.bind(this);
       this.loadCrimes = this.loadCrimes.bind(this);
     //  this.loadCrimes(this.state.map.center.lat, this.state.map.center.lng, this.state.map.center.lat, this.state.map.center.lng);
+      console.log('env', process.env.GOOGLE_API_KEY);
   }
 
 
