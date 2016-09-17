@@ -27,7 +27,7 @@ class CrimeMap extends React.Component {
     this.handleMapClick = this.handleMapClick.bind(this);
     this.newCenter = this.newCenter.bind(this);
     this.boundsChangedCallback = this.boundsChangedCallback.bind(this);
-    this.setState({showLoadingOverlay: false});
+
     console.log("loadingOverlay ? ", this.state.showLoadingOverlay);
   }
 
@@ -35,6 +35,7 @@ class CrimeMap extends React.Component {
     if (!canUseDOM) {
       return;
     }
+    this.setState({showLoadingOverlay: false});
     window.addEventListener(`resize`, this.handleWindowResize);
   }
 
